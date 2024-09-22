@@ -21,7 +21,6 @@ CUDA_VISIBLE_DEVICES=0 python ced_features.py \
     --output_dir output/snips/pre/CED \
     --model roberta-base 
 
-
 CUDA_VISIBLE_DEVICES=0 python md_eval.py \
     --dataset snips \
     --ood_datasets snips_ood \
