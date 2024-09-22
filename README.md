@@ -1,5 +1,5 @@
 # CED
-This is the official code of our paper CED: Comparing Embedding Differences for Detecting Out-of-Distribution and Hallucinated Text.
+This is the official code of our paper CED: Comparing Embedding Differences for Detecting Out-of-Distribution and Hallucinated Text (EMNLP findings 2024).
 
 
 # Requirements
@@ -11,12 +11,10 @@ In order to reproduce our results, first install the required dependencies:
     pip install -r ./requirements.txt
 
 This will create conda environment ```CED``` with correct dependencies.
-
-# Classification Task 
 ## Data
 For datasets used in classification task, download ```dataset.zip``` file from the [link](https://drive.google.com/file/d/1whsGbpWq5zkjHc80U28pPpnu2E028UpP/view?usp=drive_link) , and unzip the file under root directory. 
 
-## Scripts
+# Scripts
 We provide scrips to run CED for snips dataset. All six datasets and three models can be processed the same way by changing the ```output_dir```, ```dataset``` of the scripts to the matching dataset, models.
 
     bash scripts/snips.sh
