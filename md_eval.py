@@ -251,8 +251,8 @@ def main():
     oracle_combined_scores = scores['oracle_combined_scores']
     oracle_combined_test_scores = scores['oracle_combined_test_scores']
 
-    ind_scores = - 0.7*test_oracles_scores + test_scores + 0.2*(test_combined_scores - oracle_combined_test_scores )
-    ood_scores = -0.7*ood_oracles_scores +ood_scores +0.2*(ood_combined_scores -  oracle_combined_scores )
+    ind_scores = -0.7*test_oracles_scores + test_scores + 0.2*(test_combined_scores - oracle_combined_test_scores )
+    ood_scores = -0.7*ood_oracles_scores + ood_scores + 0.2*(ood_combined_scores - oracle_combined_scores )
     metrics = get_metrics(ind_scores, ood_scores)    
     print("MD+CED score")
     logger.info('metrics: {}'.format(metrics))
