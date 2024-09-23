@@ -15,13 +15,13 @@ This will create conda environment ```CED``` with correct dependencies.
 For datasets used in classification task, download ```dataset.zip``` file from the [link](https://drive.google.com/file/d/1whsGbpWq5zkjHc80U28pPpnu2E028UpP/view?usp=drive_link) , and unzip the file under root directory. 
 
 # Scripts
-We provide scripts to run CED for clinc dataset. All six datasets and three models can be processed the same way by changing the ```output_dir```, ```dataset``` of the scripts to the matching dataset, models.
+We provide scripts to run CED for clinc dataset. All datasets can be processed the same way by changing the ```output_dir```, ```dataset``` of the scripts to the matching dataset.
 
 Run CED with a pre-trained model:
 
     bash scripts/clinc_pre.sh
     
-Train the model on Clinc dataset:
+Train the model on clinc dataset:
 
     bash scripts/clinc_train.sh
     
